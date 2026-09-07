@@ -289,6 +289,15 @@ margin-top:26px; padding-top:20px; border-top:1px solid var(--line);
 font-size:0.78rem; color:var(--ink-soft); line-height:1.6; max-width:70ch;
 }
 
+.disclosure-inline{
+display:flex; align-items:flex-start; gap:8px;
+background:var(--chip-bg); border:1px solid var(--line); border-radius:10px;
+padding:10px 14px; margin-bottom:22px;
+font-size:0.78rem; color:var(--ink-soft); line-height:1.5;
+}
+.disclosure-inline svg{ flex:none; width:16px; height:16px; margin-top:2px; color:var(--gold); }
+.disclosure-inline strong{ color:var(--ink); }
+
 [hidden]{ display:none !important; }
 
 .product-thumb img, .pick-swatch img{
@@ -346,7 +355,7 @@ z-index:1; pointer-events:none;
 <p class="lede">Every gift guide, restock, and Black Friday price drop we post on TikTok, Instagram, and Facebook — organized in one place so you're not scrolling to find it again.</p>
 <div class="hero-stats">
 <div class="hero-stat"><b>15</b><span>weeks of gift guides</span></div>
-<div class="hero-stat"><b>1</b><span>affiliate program live (more soon)</span></div>
+<div class="hero-stat"><b>Amazon</b><span>only affiliate program live right now</span></div>
 <div class="hero-stat"><b>Weekly</b><span>new picks added</span></div>
 </div>
 </div>
@@ -398,6 +407,10 @@ z-index:1; pointer-events:none;
 </div>
 </div>
 
+<div class="disclosure-inline">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+<span><strong>Affiliate disclosure:</strong> Shop it links below go to Amazon through our Associates account — we may earn a commission on qualifying purchases at no extra cost to you.</span>
+</div>
 <div class="chip-row" id="filters">
 <button class="chip" data-filter="all" aria-pressed="true">All picks</button>
 <button class="chip" data-filter="home" aria-pressed="false">Home &amp; Self-Care</button>
