@@ -15,6 +15,8 @@ gtag('config', 'AW-18430835806');
      crossorigin="anonymous"></script>
 
 <meta charset="utf-8">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Deal Nest</title>
 <meta name="description" content="Holiday gift guides and deal tracking, built from a season of daily TikTok, Instagram, and Facebook posts.">
@@ -25,9 +27,11 @@ gtag('config', 'AW-18430835806');
 <meta property="og:title" content="The Deal Nest — Curated Finds, Gifted Right">
 <meta property="og:description" content="Holiday gift guides and deal tracking, built from a season of daily TikTok, Instagram, and Facebook posts.">
 <meta property="og:url" content="https://thedealnest.site/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://thedealnest.site/logo-horizontal.png">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Deal Nest — Curated Finds, Gifted Right">
 <meta name="twitter:description" content="Holiday gift guides and deal tracking, built from a season of daily TikTok, Instagram, and Facebook posts.">
+<meta name="twitter:image" content="https://thedealnest.site/logo-horizontal.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -103,7 +107,8 @@ position:sticky; top:0; z-index:10;
 display:flex; align-items:center; justify-content:space-between;
 gap:20px; padding:18px 24px;
 }
-.brand{ display:flex; align-items:baseline; gap:10px; }
+.brand{ display:flex; align-items:center; gap:10px; }
+.brand-logo{ height:44px; width:auto; display:block; border-radius:6px; }
 .brand-mark{
 font-size:1.5rem; font-weight:600; letter-spacing:-0.01em;
 }
@@ -371,9 +376,7 @@ z-index:1; pointer-events:none;
 <header class="site">
 <div class="wrap header-row">
 <div class="brand">
-<div class="brand-mark">The Deal <span>Nest</span></div>
-<div class="brand-tag">curated finds, gifted right</div>
-</div>
+<img class="brand-logo" src="/logo-header.png" alt="The Deal Nest — Smart Shopping Starts Here"></div>
 <nav class="tabs" role="tablist" aria-label="Site section">
 <button role="tab" id="tab-storefront" aria-selected="true" aria-controls="panel-storefront">Storefront</button>
 <button role="tab" id="tab-blog" aria-selected="false" aria-controls="panel-blog">Blog</button>
