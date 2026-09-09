@@ -229,6 +229,22 @@ aspect-ratio:4/3; border-radius:9px; position:relative; overflow:hidden;
 .product-thumb.gifts{ background:linear-gradient(150deg, #e7c9cf, var(--berry)); }
 .product-thumb.deals{ background:linear-gradient(150deg, var(--evergreen-soft), var(--evergreen)); }
 .product-thumb.ship{ background:linear-gradient(150deg, #d8cdb8, #8c7452); }
+.product-thumb.season{ background:linear-gradient(150deg, #e8a34a, #9c2f45); }
+.season-banner{
+  display:flex; flex-wrap:wrap; align-items:center; gap:14px; justify-content:space-between;
+  margin:0 0 18px; padding:16px 18px; border-radius:12px;
+  border:1px solid var(--gold); background:linear-gradient(120deg, var(--gold-soft), var(--surface));
+}
+.season-banner .sb-copy{ min-width:min(100%, 320px); flex:1 1 320px; }
+.season-banner .sb-kicker{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase;
+  color:var(--berry-ink); font-weight:700; }
+.season-banner h3{ margin:4px 0 4px; font-size:1.05rem; }
+.season-banner p{ margin:0; font-size:0.85rem; color:var(--ink-soft); }
+.season-banner a.sb-cta{ display:inline-block; padding:9px 16px; border-radius:999px;
+  background:var(--berry); color:#fff; text-decoration:none; font-size:0.82rem; font-weight:600;
+  white-space:nowrap; }
+.season-banner a.sb-cta:hover{ background:var(--berry-ink); }
+
 .product-tag-row{ display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
 .badge{
 font-family:'IBM Plex Mono', monospace; font-size:0.62rem; letter-spacing:0.04em;
@@ -429,8 +445,17 @@ z-index:1; pointer-events:none;
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
 <span><strong>Affiliate disclosure:</strong> Links below go to Amazon (Associates) and eBay (Partner Network) — we may earn a commission on qualifying purchases at no extra cost to you.</span>
 </div>
+<div class="season-banner">
+<div class="sb-copy">
+<div class="sb-kicker">New this season</div>
+<h3>Fall into Fall with The Deal Nest</h3>
+<p>One run through the whole season &mdash; autumn at home, Halloween on the porch, and the Christmas decor worth buying before it sells out.</p>
+</div>
+<a class="sb-cta" href="fall-into-fall.html">See the season &rarr;</a>
+</div>
 <div class="chip-row" id="filters">
 <button class="chip" data-filter="all" aria-pressed="true">All picks</button>
+<button class="chip" data-filter="season" aria-pressed="false">Fall into Fall</button>
 <button class="chip" data-filter="home" aria-pressed="false">Home &amp; Self-Care</button>
 <button class="chip" data-filter="gifts" aria-pressed="false">Gift Guides</button>
 <button class="chip" data-filter="deals" aria-pressed="false">BF/CM Deals</button>
@@ -438,6 +463,79 @@ z-index:1; pointer-events:none;
 </div>
 
 <div class="product-grid" id="product-grid">
+<!-- SEASON -->
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/71ukKazTmWL._AC_SX679_.jpg" alt="Yankee Candle Autumn Wreath, 22oz Large Jar" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Fall</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>Yankee Candle Autumn Wreath, 22oz Large Jar</h4>
+<p class="product-meta">Fall into Fall</p>
+<p class="product-source">Sourced: the fall scent people rebuy every year &mdash; verified on Amazon Sep 9</p>
+<div class="product-foot"><span class="product-price mono">~$35</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B0F3DRZV41?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=yankee+candle+autumn+wreath+large+jar&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/912IWX++WOL._AC_SX679_.jpg" alt="24-Inch Fall Wreath for the Front Door" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Fall</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>24-Inch Fall Wreath for the Front Door</h4>
+<p class="product-meta">Fall into Fall</p>
+<p class="product-source">Sourced: autumn front-door decor &mdash; peak search volume Sep&ndash;Oct</p>
+<div class="product-foot"><span class="product-price mono">~$30</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B088D494ZJ?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=fall+wreath+front+door+24+inch&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/712H6Mqf8YL._AC_SX679_.jpg" alt="Fall Pillow Covers, 18x18 Set of 4" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Fall</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>Fall Pillow Covers, 18x18 Set of 4</h4>
+<p class="product-meta">Fall into Fall</p>
+<p class="product-source">Sourced: cheapest way to turn a room over for the season</p>
+<div class="product-foot"><span class="product-price mono">~$10</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B09V2QQN1Z?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=fall+pillow+covers+18x18+set&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/61qtDG71FQL._AC_SX679_.jpg" alt="Rotating Ghost Projector Light, Waterproof" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Halloween</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>Rotating Ghost Projector Light, Waterproof</h4>
+<p class="product-meta">Fall into Fall &middot; Halloween</p>
+<p class="product-source">Sourced: Halloween yard decor &mdash; projectors sell out first every October</p>
+<div class="product-foot"><span class="product-price mono">~$20</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B0856TSXZB?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=halloween+ghost+projector+light+outdoor&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/71KLtM90UXL._AC_SX679_.jpg" alt="Purple and Orange Halloween String Lights, 33ft" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Halloween</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>Purple &amp; Orange Halloween String Lights, 33ft</h4>
+<p class="product-meta">Fall into Fall &middot; Halloween</p>
+<p class="product-source">Sourced: the under-$15 Halloween buy that does the most work</p>
+<div class="product-foot"><span class="product-price mono">~$13</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B09SKXRK39?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=purple+orange+halloween+string+lights&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/81-HWBR91vL._AC_SX679_.jpg" alt="Halloween Ghost Doormat, 16 inch x 28 inch" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Halloween</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>Halloween Ghost Doormat, 16&quot; x 28&quot;</h4>
+<p class="product-meta">Fall into Fall &middot; Halloween</p>
+<p class="product-source">Sourced: seasonal doormats &mdash; a steady October gift and self-buy</p>
+<div class="product-foot"><span class="product-price mono">~$18</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B0D31LZH9G?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=halloween+ghost+doormat+coir&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/71ssnTKZofL._AC_SX679_.jpg" alt="15-Inch Pre-Lit Ceramic Christmas Tree" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Christmas</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>15-Inch Pre-Lit Ceramic Christmas Tree</h4>
+<p class="product-meta">Fall into Fall &middot; Christmas</p>
+<p class="product-source">Sourced: the retro ceramic tree revival &mdash; sells out by early December</p>
+<div class="product-foot"><span class="product-price mono">~$43</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B01N0I95PO?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=ceramic+christmas+tree+lighted+tabletop&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/61ga2uCYeOL._AC_SX679_.jpg" alt="27-Inch Rattan Christmas Tree Collar" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Christmas</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>27-Inch Rattan Christmas Tree Collar</h4>
+<p class="product-meta">Fall into Fall &middot; Christmas</p>
+<p class="product-source">Sourced: tree collars have overtaken tree skirts in holiday decor searches</p>
+<div class="product-foot"><span class="product-price mono">~$40</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B0B4RMNZQK?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=christmas+tree+collar+rattan+basket&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
+<div class="product-card" data-cat="season">
+<div class="product-thumb season"><img src="https://m.media-amazon.com/images/I/81P18JEQLoL._AC_SX679_.jpg" alt="Govee Christmas Sparkle String Lights, 66ft" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">Christmas</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>Govee Christmas Sparkle String Lights, 66ft</h4>
+<p class="product-meta">Fall into Fall &middot; Christmas</p>
+<p class="product-source">Sourced: app-controlled Christmas lights &mdash; the splurge pick of the category</p>
+<div class="product-foot"><span class="product-price mono">~$120</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B0FCFD1L59?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=govee+christmas+string+lights+rgbic&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
 <!-- HOME -->
 <div class="product-card" data-cat="home">
 <div class="product-thumb home"><img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T2/images/I/71iSPIaDoSL._AC_SX679_.jpg" alt="Wax Melting Lamp (Flameless Candle Warmer)" loading="lazy"><span class="wm">The Deal Nest</span></div>
@@ -840,6 +938,15 @@ z-index:1; pointer-events:none;
 <div class="blog-status"><span class="status-pill live">Live</span></div>
 </div>
 <div class="blog-row">
+<div class="blog-date"><b>Sep 12</b>2026</div>
+<div class="blog-body">
+<h3><a href="blog-fall-into-fall.html">Fall Into Fall: The Autumn Edit That Costs Under $80</a></h3>
+<p>Three buys turn a house over for the season &mdash; scent, the front door, and the couch.</p>
+<div class="blog-tags"><span class="tag">fall</span><span class="tag">decor</span></div>
+</div>
+<div class="blog-status"><span class="status-pill live">Live</span></div>
+</div>
+<div class="blog-row">
 <div class="blog-date"><b>Sep 15</b>2026</div>
 <div class="blog-body">
 <h3><a href="blog-holiday-kitchen-prep.html">Holiday Kitchen Prep: Gear to Buy Before the Rush</a></h3>
@@ -876,6 +983,15 @@ z-index:1; pointer-events:none;
 <div class="blog-status"><span class="status-pill live">Live</span></div>
 </div>
 <div class="blog-row">
+<div class="blog-date"><b>Oct 8</b>2026</div>
+<div class="blog-body">
+<h3><a href="blog-halloween-decor-that-lasts.html">Halloween Decor That Earns Its Storage Box</a></h3>
+<p>Most Halloween spending is thrown out by November. Here is the part that is not.</p>
+<div class="blog-tags"><span class="tag">halloween</span><span class="tag">decor</span></div>
+</div>
+<div class="blog-status"><span class="status-pill live">Live</span></div>
+</div>
+<div class="blog-row">
 <div class="blog-date"><b>Oct 12</b>2026</div>
 <div class="blog-body">
 <h3><a href="blog-prime-big-deal-days.html">Prime Big Deal Days: Every Deal Worth Watching</a></h3>
@@ -908,6 +1024,15 @@ z-index:1; pointer-events:none;
 <h3><a href="blog-holiday-gift-guide-vol1.html">Gift Guide Vol. 1: Under $60</a></h3>
 <p>The first drop of the season's gift guide series — crowd-pleasing picks that still feel considered.</p>
 <div class="blog-tags"><span class="tag">gift guide</span><span class="tag">ltk</span></div>
+</div>
+<div class="blog-status"><span class="status-pill live">Live</span></div>
+</div>
+<div class="blog-row">
+<div class="blog-date"><b>Nov 6</b>2026</div>
+<div class="blog-body">
+<h3><a href="blog-christmas-decor-early-november.html">Christmas Decor: Why Early November Is the Right Week</a></h3>
+<p>Structural decor sells out in December and is never on sale while it is still useful.</p>
+<div class="blog-tags"><span class="tag">christmas</span><span class="tag">holiday prep</span></div>
 </div>
 <div class="blog-status"><span class="status-pill live">Live</span></div>
 </div>

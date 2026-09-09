@@ -10,6 +10,26 @@
 
 <!-- Blog / Gift Guides -->
 <url>
+  <loc>https://madisonmcmillen94-sketch.github.io/fall-into-fall.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>https://madisonmcmillen94-sketch.github.io/blog-fall-into-fall.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://madisonmcmillen94-sketch.github.io/blog-halloween-decor-that-lasts.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://madisonmcmillen94-sketch.github.io/blog-christmas-decor-early-november.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://madisonmcmillen94-sketch.github.io/blog-holiday-kitchen-prep.html</loc>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
