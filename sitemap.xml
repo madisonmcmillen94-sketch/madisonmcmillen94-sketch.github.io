@@ -10,6 +10,31 @@
 
 <!-- Blog / Gift Guides -->
 <url>
+  <loc>https://madisonmcmillen94-sketch.github.io/blog-holiday-kitchen-prep.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://madisonmcmillen94-sketch.github.io/blog-cozy-decor-starter-kit.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://madisonmcmillen94-sketch.github.io/blog-hosting-season-prep.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://madisonmcmillen94-sketch.github.io/blog-thanksgiving-kitchen-kit.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://madisonmcmillen94-sketch.github.io/blog-after-christmas-decor-sales.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
   <loc>https://madisonmcmillen94-sketch.github.io/blog-september-reset.html</loc>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
