@@ -218,6 +218,21 @@ aspect-ratio:4/3; border-radius:9px; position:relative; overflow:hidden;
 .product-thumb.deals{ background:linear-gradient(150deg, var(--evergreen-soft), var(--evergreen)); }
 .product-thumb.ship{ background:linear-gradient(150deg, #d8cdb8, #8c7452); }
 .product-thumb.season{ background:linear-gradient(150deg, #e8a34a, #6b3f9e); }
+.week-pick{ display:flex; flex-wrap:wrap; gap:18px; align-items:center; margin:0 0 18px; padding:18px;
+  border-radius:14px; border:2px solid var(--berry); background:linear-gradient(120deg, var(--surface), var(--gold-soft)); }
+.week-pick figure{ margin:0; flex:0 0 160px; }
+.week-pick figure img{ width:160px; height:auto; aspect-ratio:2/3; object-fit:cover; border-radius:10px; display:block; background:#fff; }
+.week-pick .wp-copy{ flex:1 1 280px; min-width:min(100%,280px); }
+.week-pick .wp-kicker{ font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--berry-ink); font-weight:700; }
+.week-pick h3{ margin:4px 0 6px; font-size:1.15rem; }
+.week-pick p{ margin:0 0 10px; font-size:0.88rem; color:var(--ink-soft); }
+.week-pick .wp-price{ font-weight:700; margin-right:10px; }
+.week-pick .wp-links a{ display:inline-block; margin:4px 8px 0 0; padding:9px 16px; border-radius:999px; background:var(--berry);
+  color:#fff; text-decoration:none; font-size:0.82rem; font-weight:600; }
+.week-pick .wp-links a.alt{ background:transparent; color:var(--berry-ink); border:1px solid var(--berry); }
+.week-pick .wp-links a:hover{ background:var(--berry-ink); color:#fff; }
+@media (max-width:520px){ .week-pick figure{ flex-basis:100%; } .week-pick figure img{ width:100%; max-width:200px; margin:0 auto; } }
+
 .season-banner{
   display:flex; flex-wrap:wrap; align-items:center; gap:14px; justify-content:space-between;
   margin:0 0 18px; padding:16px 18px; border-radius:12px;
@@ -437,6 +452,15 @@ z-index:1; pointer-events:none;
 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
 <span><strong>Affiliate disclosure:</strong> Links below go to Amazon (Associates), eBay (Partner Network), and Temu (Affiliate Program) — we may earn a commission on qualifying purchases at no extra cost to you.</span>
 </div>
+<section class="week-pick" id="this-weeks-pick" aria-label="This week's pick">
+<figure class="hero-pin"><img src="https://m.media-amazon.com/images/I/7102yMFM5oL._AC_SR600,900_.jpg" alt="Skylight Calendar 2, 15-inch touchscreen family calendar &mdash; This Week's Pick at The Deal Nest" width="600" height="900"></figure>
+<div class="wp-copy">
+<div class="wp-kicker">This week's pick &middot; Sep 23&ndash;29</div>
+<h3>Skylight Calendar 2 &mdash; 15" Touchscreen Family Calendar</h3>
+<p>The wall calendar that runs the whole household: syncs Google, Apple and Outlook calendars, plus chore charts, meal plans and lists everyone can see. A big-ticket gift worth watching now, before holiday demand picks up. 4.4&#9733; from 6,900+ reviews.</p>
+<div class="wp-links"><span class="wp-price mono">~$320</span><a href="https://www.amazon.com/dp/B0G618GK4S?tag=thedealnest00-20">Shop on Amazon</a><a class="alt" href="https://www.ebay.com/sch/i.html?_nkw=skylight+calendar+15&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">Compare on eBay</a></div>
+</div>
+</section>
 <div class="season-banner">
 <div class="sb-copy">
 <div class="sb-kicker">New this season</div>
@@ -829,6 +853,14 @@ z-index:1; pointer-events:none;
 <div class="product-foot"><span class="product-price mono">~$19</span><div class="shop-links"><a class="shop-link temu" href="https://temu.to/k/pfjj92r4rap">Temu</a></div></div>
 </div>
 <!-- GIFTS -->
+<div class="product-card" data-cat="gifts">
+<div class="product-thumb gifts"><img src="https://m.media-amazon.com/images/I/7102yMFM5oL._AC_SX679_.jpg" alt="Skylight Calendar 2 &ndash; 15-inch Touchscreen Digital Calendar" loading="lazy"><span class="wm">The Deal Nest</span></div>
+<div class="product-tag-row"><span class="badge trend">This week's pick</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
+<h4>Skylight Calendar 2 &ndash; 15" Touchscreen Family Calendar</h4>
+<p class="product-meta">Gifting &middot; Splurge Pick</p>
+<p class="product-source">Sourced: family-organizer category leader, Wirecutter-featured &mdash; verified on Amazon Sep 23</p>
+<div class="product-foot"><span class="product-price mono">~$320</span><div class="shop-links"><a class="shop-link" href="https://www.amazon.com/dp/B0G618GK4S?tag=thedealnest00-20">Amazon</a><a class="shop-link ebay" href="https://www.ebay.com/sch/i.html?_nkw=skylight+calendar+15&LH_BIN=1&LH_ItemCondition=1000&mkcid=1&mkrid=711-53200-19255-0&siteid=0&campid=5339205228&toolid=10001&mkevt=1">eBay</a></div></div>
+</div>
 <div class="product-card" data-cat="gifts">
 <div class="product-thumb gifts"><img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T2/images/I/51AaW6rpIFL._AC_SX679_.jpg" alt="Gift Guide Vol. 1 Pick: Status Water Bottle" loading="lazy"><span class="wm">The Deal Nest</span></div>
 <div class="product-tag-row"><span class="badge trend">TikTok trend</span><span class="badge live">Amazon</span><span class="badge ebay">eBay</span></div>
